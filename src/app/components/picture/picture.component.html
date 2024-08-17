@@ -1,0 +1,9 @@
+<div class="picture-list row">
+  @for (picture of pictureContent; track picture.id) {
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="m-2 card my-2 text-center">
+        <app-picture-card [picture]="picture" />
+      </div>
+    </div>
+  }
+</div>
