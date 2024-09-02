@@ -24,9 +24,15 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/app/components/*"],
+      "@guards/*": ["src/app/core/guards/*"],
+      "@interceptors/*": ["src/app/core/interceptors/*"],
       "@models/*": ["src/app/core/models/*"],
       "@services/*": ["src/app/core/services/*"],
       "@pages/*": ["src/app/pages/*"],
+      "@directives/*": ["src/app/shared/directives/*"],
+      "@pipes/*": ["src/app/shared/pipes/*"],
+      "@sharedComponents/*": ["src/app/shared/components/*"],
+      "@env/*": ["env/*"]
     }
   },
   "angularCompilerOptions": {

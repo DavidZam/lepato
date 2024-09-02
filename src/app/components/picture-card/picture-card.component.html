@@ -1,4 +1,4 @@
 <picture>
-  <source [srcset]="picture?.url" type="image/jpg" />
-  <img class="img-fluid" alt="Picture Card Image" loading="lazy" [src]="picture?.url" />
+  <source [srcset]="getPhotoUrl(photo)" type="image/jpg" />
+  <img class="img-fluid" [alt]="photo?.title" [src]="getPhotoUrl(photo)" />
 </picture>

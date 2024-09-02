@@ -3,7 +3,7 @@ import { render } from '@testing-library/angular';
 import '@testing-library/jest-dom';
 import { PictureComponent } from './picture.component';
 
-describe('Media', () => {
+describe('Picture', () => {
   it('should render the component', async () => {
     await render(PictureComponent, {
       providers: [HttpClient, HttpHandler],

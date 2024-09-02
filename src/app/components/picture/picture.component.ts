@@ -1,14 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import type { Picture } from '@models/picture.interface';
+import type { Photo } from '@models/photo.interface';
 import { PictureCardComponent } from '../picture-card/picture-card.component';
 
 @Component({
   selector: 'app-picture',
   standalone: true,
-  imports: [PictureCardComponent],
+  imports: [PictureCardComponent, CommonModule],
   templateUrl: './picture.component.html',
   styleUrl: './picture.component.css',
 })
 export class PictureComponent {
-  @Input() pictureContent: Picture[] = [];
+  @Input() photoContent: Photo[] = [];
 }
